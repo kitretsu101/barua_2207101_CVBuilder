@@ -6,7 +6,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -39,13 +38,22 @@ public class create_controller {
         mycv.name=name.getText();
         mycv.phone=phone.getText();
         mycv.skills=skills.getText();
+
+
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("preview.fxml"));
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("preview.fxml"));
+        Parent root = loader.load();
+
         Scene scene = new Scene(root);
+
+        previewcontroller p = loader.getController();
+        p.setValue(mycv);
 
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+
     }
 
 }
