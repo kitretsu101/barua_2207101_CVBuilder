@@ -10,6 +10,8 @@ module com.example.cv {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires javafx.graphics;
+    requires java.desktop;
 
     opens com.example.cv to javafx.fxml;
     exports com.example.cv;
