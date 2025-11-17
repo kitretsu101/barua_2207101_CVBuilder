@@ -6,99 +6,58 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cv.previewcontroller">
-   <children>
-      <HBox layoutX="68.0" layoutY="34.0" spacing="50.0">
-         <children>
-            <VBox spacing="25.0">
-               <children>
-                  <Label text="Name">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label text="Email:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label text="Phone">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label text="Address">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label text="Education:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label text="Skills:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label text="Work Experience:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label text="Projects:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </VBox>
-            <VBox spacing="25.0">
-               <children>
-                  <Label fx:id="name" text="Name">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="email" text="Email:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="phone" text="Phone">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="address" text="Address">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="education" text="Education:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="skills" text="Skills:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="work" text="Work Experience:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="projects" text="Projects:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </VBox>
-         </children>
-      </HBox>
-   </children>
+<AnchorPane
+        prefHeight="730.0" prefWidth="600.0"
+        style="-fx-background-color: #e8ebf2; -fx-padding: 20;"
+        xmlns="http://javafx.com/javafx/25"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.example.cv.previewcontroller">
+
+    <children>
+        <VBox layoutX="30" layoutY="30" spacing="20"
+              style="
+                  -fx-background-color: white;
+                  -fx-background-radius: 12;
+                  -fx-padding: 30;
+                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10,0,0,4);
+              ">
+
+            <!-- Header -->
+            <Label text="Curriculum Vitae"
+                   style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+
+            <!-- HBox to separate labels & values -->
+            <HBox spacing="40">
+                <children>
+
+                    <!-- Labels Column -->
+                    <VBox spacing="18">
+                        <Label text="Name:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                        <Label text="Email:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                        <Label text="Phone:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                        <Label text="Address:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                        <Label text="Education:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                        <Label text="Skills:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                        <Label text="Work Experience:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                        <Label text="Projects:" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a3a5f;" />
+                    </VBox>
+
+                    <!-- Values Column -->
+                    <VBox spacing="18">
+                        <Label fx:id="name" text="Name" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                        <Label fx:id="email" text="Email" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                        <Label fx:id="phone" text="Phone" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                        <Label fx:id="address" text="Address" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                        <Label fx:id="education" text="Education" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                        <Label fx:id="skills" text="Skills" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                        <Label fx:id="work" text="Work Experience" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                        <Label fx:id="projects" text="Projects" style="-fx-font-size: 18; -fx-text-fill: #444;" />
+                    </VBox>
+
+                </children>
+            </HBox>
+
+        </VBox>
+    </children>
+
 </AnchorPane>

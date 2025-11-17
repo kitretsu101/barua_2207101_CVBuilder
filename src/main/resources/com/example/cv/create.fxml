@@ -7,76 +7,89 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cv.create_controller">
-   <children>
-      <VBox layoutX="68.0" layoutY="47.0" spacing="10.0">
-         <children>
-            <TextArea fx:id="name" prefHeight="26.0" prefWidth="488.0" promptText="Name">
-               <font>
-                  <Font size="10.0" />
-               </font>
+<AnchorPane
+        maxHeight="-Infinity"
+        maxWidth="-Infinity"
+        minHeight="-Infinity"
+        minWidth="-Infinity"
+        prefHeight="1000.0"
+        prefWidth="600.0"
+        xmlns="http://javafx.com/javafx/25"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.example.cv.create_controller"
+        style="
+            -fx-background-color: linear-gradient(to bottom right, #f0f4ff, #dce6fa);
+            -fx-font-family: 'Segoe UI', sans-serif;
+        ">
+
+    <children>
+        <VBox layoutX="68.0" layoutY="47.0" spacing="14.0">
+
+            <TextArea fx:id="name" prefHeight="26.0" prefWidth="488.0" promptText="Name"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
+                <font><Font size="12.0" /></font>
             </TextArea>
-            <TextArea fx:id="email" prefHeight="26.0" prefWidth="488.0" promptText="Email">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <TextArea fx:id="email" prefHeight="26.0" prefWidth="488.0" promptText="Email"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
+                <font><Font size="12.0" /></font>
             </TextArea>
-            <TextArea fx:id="phone" prefHeight="26.0" prefWidth="488.0" promptText="Phone">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <TextArea fx:id="phone" prefHeight="26.0" prefWidth="488.0" promptText="Phone"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
+                <font><Font size="12.0" /></font>
             </TextArea>
-            <TextArea fx:id="address" prefHeight="26.0" prefWidth="488.0" promptText="Address">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <TextArea fx:id="address" prefHeight="26.0" prefWidth="488.0" promptText="Address"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
+                <font><Font size="12.0" /></font>
             </TextArea>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Education">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <Text text="Education"
+                  style="-fx-fill: #2a3a5f; -fx-font-weight: bold; -fx-font-size: 13;">
             </Text>
-            <TextArea fx:id="edu" prefHeight="55.0" prefWidth="383.0" promptText="Add Eductation">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <TextArea fx:id="edu" prefHeight="55.0" prefWidth="383.0" promptText="Add Education"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
             </TextArea>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Skills">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <Text text="Skills"
+                  style="-fx-fill: #2a3a5f; -fx-font-weight: bold; -fx-font-size: 13;">
             </Text>
-            <TextArea fx:id="skills" prefHeight="55.0" prefWidth="383.0" promptText="Add Skills">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <TextArea fx:id="skills" prefHeight="55.0" prefWidth="383.0" promptText="Add Skills"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
             </TextArea>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Projects">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <Text text="Projects"
+                  style="-fx-fill: #2a3a5f; -fx-font-weight: bold; -fx-font-size: 13;">
             </Text>
-            <TextArea fx:id="projects" prefHeight="55.0" prefWidth="383.0" promptText="Add projects">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <TextArea fx:id="projects" prefHeight="55.0" prefWidth="383.0" promptText="Add Projects"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
             </TextArea>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Work Experience">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <Text text="Work Experience"
+                  style="-fx-fill: #2a3a5f; -fx-font-weight: bold; -fx-font-size: 13;">
             </Text>
-            <TextArea fx:id="work" prefHeight="55.0" prefWidth="383.0" promptText="Add Work Experience">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <TextArea fx:id="work" prefHeight="55.0" prefWidth="383.0" promptText="Add Work Experience"
+                      style="-fx-background-radius: 8; -fx-padding: 6; -fx-font-size: 12;">
             </TextArea>
-            <Button mnemonicParsing="false" onAction="#generatecv" text="Generate CV">
-               <font>
-                  <Font size="10.0" />
-               </font>
+
+            <Button text="Generate CV" mnemonicParsing="false" onAction="#generatecv"
+                    style="
+                     -fx-background-color: #3f6bff;
+                     -fx-text-fill: white;
+                     -fx-padding: 10 20 10 20;
+                     -fx-background-radius: 8;
+                     -fx-font-size: 13;
+                     -fx-font-weight: bold;
+                     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 2);
+                 ">
+                <font><Font size="12.0" /></font>
             </Button>
-         </children>
-      </VBox>
-   </children>
+
+        </VBox>
+    </children>
 </AnchorPane>
