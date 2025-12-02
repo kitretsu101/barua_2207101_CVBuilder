@@ -12,6 +12,7 @@ module com.example.cv {
     requires com.almasb.fxgl.all;
     requires javafx.graphics;
     requires java.desktop;
+    requires java.sql;
 
     opens com.example.cv to javafx.fxml;
     exports com.example.cv;

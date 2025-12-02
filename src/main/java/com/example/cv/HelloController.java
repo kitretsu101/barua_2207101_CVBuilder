@@ -14,15 +14,26 @@ import java.io.IOException;
 
 public class HelloController {
     @FXML
-   private Button welcomeButton;
+    private Button welcomeButton;
 
     @FXML
     private void goTocreateCV(ActionEvent event) throws IOException {
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("create.fxml"));
         Scene scene = new Scene(root);
 
-        stage.setTitle("Hello!");
+        stage.setTitle("Create CV");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void goToList(ActionEvent event) throws IOException {
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("cv-list-view.fxml"));
+        Scene scene = new Scene(root);
+
+        stage.setTitle("My CVs");
         stage.setScene(scene);
         stage.show();
     }

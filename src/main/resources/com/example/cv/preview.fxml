@@ -57,6 +57,10 @@
                 </children>
             </HBox>
 
+            <!-- Back Button -->
+            <Button text="Back to List" onAction="#handleBack"
+                    style="-fx-background-color: #607D8B; -fx-text-fill: white; -fx-font-size: 14; -fx-cursor: hand;" />
+
         </VBox>
     </children>
 

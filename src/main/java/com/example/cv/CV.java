@@ -1,6 +1,7 @@
 package com.example.cv;
 
 public class CV {
+    public int id;
     public String name;
     public String email;
     public String phone;
@@ -9,6 +10,14 @@ public class CV {
     public String skills;
     public String work;
     public String projects;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

@@ -54,6 +54,27 @@
             </font>
         </Button>
 
+        <Button fx:id="listButton"
+                layoutX="254.0"
+                layoutY="320.0"
+                mnemonicParsing="false"
+                onAction="#goToList"
+                text="View Saved CVs"
+                style="
+                  -fx-background-color: #4CAF50;
+                  -fx-text-fill: white;
+                  -fx-padding: 8px 20px;
+                  -fx-background-radius: 8;
+                  -fx-font-size: 14px;
+                  -fx-font-weight: bold;
+                  -fx-cursor: hand;
+                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 2);
+              ">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+
     </children>
 
 </AnchorPane>
